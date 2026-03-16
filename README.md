@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart Food Diet System 🥗✨
 
 A premium, AI-powered nutrition platform that provides personalized meal and workout recommendations based on your health goals and local weather conditions.
@@ -74,3 +75,7 @@ Our unique algorithm evaluates your daily plan across 4 dimensions:
 - `backend/`: FastAPI server, MongoDB models, and Recommendation services.
 - `frontend/`: React components, Framer Motion animations, and Recharts visualization.
 - `database/`: Seed data and MongoDB connection logic.
+=======
+# Smart_Food_Diet_System
+Smart-Food-Diet-System is an AI-powered nutrition platform that provides personalized meal plans and real-time health insights. Using the Gemini API and a modern glass morphic UI, it features localized meal recommendations, weather-based diet tips, a macro tracker, and interactive workout guides.
+>>>>>>> a7f0d20ce625030cbaa1c272233ab496a518ba5f
