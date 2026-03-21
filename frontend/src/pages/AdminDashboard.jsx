@@ -93,9 +93,9 @@ export default function AdminDashboard() {
                 <img 
                     src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2000&auto=format&fit=crop" 
                     alt="Healthy Food Background" 
-                    className="w-full h-full object-cover opacity-20 contrast-100"
+                    className="w-full h-full object-cover opacity-40 contrast-100"
                 />
-                <div className="absolute inset-0 bg-[#020617]/80 backdrop-blur-[2px]" />
+                <div className="absolute inset-0 bg-[#020617]/60" />
                 <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-emerald-500/10 blur-[120px] rounded-full animate-pulse" />
                 <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500/10 blur-[120px] rounded-full animate-pulse delay-700" />
             </div>
