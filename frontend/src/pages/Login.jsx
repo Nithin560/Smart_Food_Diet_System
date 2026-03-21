@@ -143,8 +143,43 @@ export default function Login() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden bg-[#020617] text-slate-200">
-            {/* Ambient Background Effects */}
+        <div className="min-h-screen flex flex-col lg:flex-row bg-[#020617] text-slate-200">
+            {/* Left Side: Hero Image (Desktop Only) */}
+            <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden items-center justify-center p-12">
+                <div className="absolute inset-0 z-0">
+                    <img 
+                        src="/auth-hero.jpg" 
+                        alt="Smart Diet System" 
+                        className="w-full h-full object-cover opacity-60 scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#020617] via-transparent to-transparent z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/20 to-transparent z-10" />
+                </div>
+                
+                <div className="relative z-20 max-w-lg">
+                    <motion.div
+                        initial={{ opacity: 0, x: -30 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <h2 className="text-5xl font-black text-white leading-tight uppercase tracking-tighter mb-6">
+                            Precision <span className="text-primary italic">Fueling</span> <br />
+                            for your Body
+                        </h2>
+                        <div className="flex gap-4 items-center mb-8">
+                            <div className="h-1 w-20 bg-primary rounded-full" />
+                            <p className="text-slate-400 font-bold uppercase tracking-widest text-xs">Aesthetic & Performance</p>
+                        </div>
+                        <p className="text-xl text-slate-300 leading-relaxed font-medium">
+                            Experience a diet system that understands your biology. Real science, real results, powered by advanced tracking.
+                        </p>
+                    </motion.div>
+                </div>
+            </div>
+
+            {/* Right Side: Auth Form */}
+            <div className="flex-1 flex items-center justify-center p-6 relative overflow-hidden">
+                {/* Ambient Background Effects */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
               <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-emerald-500/10 blur-[120px] rounded-full animate-pulse" />
               <div className="absolute -bottom-1/4 -right-1/4 w-1/2 h-1/2 bg-blue-500/5 blur-[120px] rounded-full animate-pulse delay-700" />
@@ -402,5 +437,6 @@ export default function Login() {
                 </div>
             </motion.div>
         </div>
+    </div>
     );
 }

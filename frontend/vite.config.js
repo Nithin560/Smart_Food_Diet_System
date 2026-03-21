@@ -1,3 +1,12 @@
+if (typeof CustomEvent === 'undefined') {
+  global.CustomEvent = class CustomEvent extends Event {
+    constructor(event, params) {
+      super(event, params);
+      this.detail = params?.detail;
+    }
+  };
+}
+
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';

@@ -1,0 +1,9 @@
+node_modules
+.gitignore
+Dockerfile
+.env
+.DS_Store
+# dist is NEEDED now
+!dist
+# nginx.conf is NEEDED
+!nginx.conf
